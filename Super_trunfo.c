@@ -4,46 +4,61 @@ int main(){
 
 
     printf("Desafio super trunfo\n");
-//Cadastro da primeira carta cidade Alagoas dados de 2024
+//Cadastro da primeira carta cidade Maceió dados de 2024
 
 
-    char estado_A = 'A';
-    char codigo_da_carta_A = 'A01';
-    char nome_da_cidade_A = 'Alagoas';
-    int população_A = 3220104; //Aproximada em 2024
-    float area_em_km²_A = 27.230; 
-    float pib_A = 76.07; // PIB Em bilhões de reais
-    int número_de_pontos_turisticos_A = 20; //fonte tirada do google
+    char estado_A[40];
+    char codigo_da_carta_A[10];
+    char nome_da_cidade_A[50];
+    int populacao_A; //Aproximada em 2024
+    float area_em_km_A; 
+    float pib_A; // PIB Em bilhões de reais
+    int numero_de_pontos_turisticos_A; //fonte tirada do google
 
 
-    //Cadastro da segunda carta cidade Bahia dados de 2024
-    char estado_B ='B';
-    char codigo_da_carta_B = 'B01';
-    char nome_da_cidade_B = 'Bahia';
-    int população_B = 14850513; //Aproximada em 2024
-    float area_em_km²_B = 567.295; 
-    float pib_B = 349.00; // PIB Em bilhões de reais
-    int número_de_pontos_turisticos_B = 29; //fonte tirada do google
+    //Cadastro da segunda carta cidade Feira de santana dados de 2024
+    char estado_B[40];
+    char codigo_da_carta_B[10];
+    char nome_da_cidade_B[50];
+    int populacao_B; //Aproximada em 2024
+    float area_em_km_B; 
+    float pib_B; // PIB Em bilhões de reais
+    int numero_de_pontos_turisticos_B; //fonte tirada do google
 
     //Dados da primeira carta
-    scanf("Carta_1:\n");
-    printf("Estado: %c\n", estado_A);
-    printf("Código: %s\n", codigo_da_carta_A);
-    printf("Nome da Cidade: %s\n", nome_da_cidade_A);
-    printf("População: %d\n", população_A);
-    printf("Área (em Km²):%.3f\n", area_em_km²_A);
-    printf("PIB: %.2f\n",pib_A);
-    printf("Número de pontos Turistisco: %d\n", número_de_pontos_turisticos_A);
+    printf("Carta_1:\n");
+    printf("Digite o Estado: \n");
+    scanf("%c", &estado_A);
+    printf("Digite o código da carta: \n");
+    scanf("%c", &codigo_da_carta_A);
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome_da_cidade_A);
+    printf("Digite a população aproximada: \n");
+    scanf("%d", &populacao_A);
+    printf("Digite a área em Km²: \n");
+    scanf("%f", &area_em_km_A);
+    printf("Digite o PIB: \n");
+    scanf("%f", &pib_A);
+    printf("Digite quantos pontos turisticos tem: \n");
+    scanf("%d", &numero_de_pontos_turisticos_A);
 
     //Dados da segunda carta
     printf("Carta_2:\n");
-    printf("Estado: %c\n", estado_B);
-    printf("Código: %s\n", codigo_da_carta_B);
-    printf("Nome da Cidade: %s\n", nome_da_cidade_B);
-    printf("População: %d\n", população_B);
-    printf("Área (em Km²):%.3f\n", area_em_km²_B);
-    printf("PIB: %.2f\n",pib_B);
-    printf("Número de pontos Turistisco: %d\n", número_de_pontos_turisticos_B);
+    printf("Digite o Estado: \n");
+    scanf("%c", &estado_B);
+    printf("Digite o código da carta: \n");
+    scanf("%s", &codigo_da_carta_B);
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome_da_cidade_B);
+    printf("Digite a população aproximada: \n");
+    scanf("%d", &populacao_B);
+    printf("Digite a área em Km²: \n");
+    scanf("%f", &area_em_km_B);
+    printf("Digite o PIB: \n");
+    scanf("%f", &pib_B);
+    printf("Digite quantos pontos turisticos tem: \n");
+    scanf("%d", &numero_de_pontos_turisticos_B);
+
 
     return 0;
 }
