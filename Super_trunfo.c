@@ -7,7 +7,7 @@ int main(){
 //Cadastro da primeira carta cidade Maceió dados de 2024
 
 
-    char estado_A[40];
+    char estado_A;
     char codigo_da_carta_A[10];
     char nome_da_cidade_A[50];
     int populacao_A; //Aproximada em 2024
@@ -17,7 +17,7 @@ int main(){
 
 
     //Cadastro da segunda carta cidade Feira de santana dados de 2024
-    char estado_B[40];
+    char estado_B;
     char codigo_da_carta_B[10];
     char nome_da_cidade_B[50];
     int populacao_B; //Aproximada em 2024
@@ -30,7 +30,7 @@ int main(){
     printf("Digite o Estado: \n");
     scanf("%c", &estado_A);
     printf("Digite o código da carta: \n");
-    scanf("%c", &codigo_da_carta_A);
+    scanf("%s", &codigo_da_carta_A);
     printf("Digite o nome da cidade: \n");
     scanf("%s", nome_da_cidade_A);
     printf("Digite a população aproximada: \n");
